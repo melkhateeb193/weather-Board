@@ -1,3 +1,5 @@
+import icon from '../../public/icon.webp';
+
 export default function LeftCards() {
   return (
     <ul className="mt-3">
@@ -11,7 +13,7 @@ export default function LeftCards() {
           <div className="flex justify-between flex-col-reverse items-center">
             <h1 className="text-2xl">32°</h1>
             <img
-              src="/icon.webp"
+              src={icon}
               alt="Weather Icon"
               className="w-[4rem] h-[4rem]"
             />
@@ -28,7 +30,7 @@ export default function LeftCards() {
           <div className="flex justify-between flex-col-reverse items-center">
             <h1 className="text-2xl">32°</h1>
             <img
-              src="/icon.webp"
+              src={icon}
               alt="Weather Icon"
               className="w-[4rem] h-[4rem]"
             />
@@ -45,7 +47,7 @@ export default function LeftCards() {
           <div className="flex justify-between flex-col-reverse items-center">
             <h1 className="text-2xl">32°</h1>
             <img
-              src="/icon.webp"
+              src={icon}
               alt="Weather Icon"
               className="w-[4rem] h-[4rem]"
             />
