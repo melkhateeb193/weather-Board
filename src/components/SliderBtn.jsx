@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function SliderBtn({left , right ,styles }) {
     const [active, setActive] = useState("forecast"); 
@@ -34,3 +35,14 @@ export default function SliderBtn({left , right ,styles }) {
     </div>
   )
 }
+
+SliderBtn.propTypes = {
+  left: PropTypes.string.isRequired,  
+  right: PropTypes.string.isRequired, 
+  styles: PropTypes.string,    
+};
+
+
+SliderBtn.defaultProps = {
+  styles: "",
+};

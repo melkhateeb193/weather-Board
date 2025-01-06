@@ -3,6 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import SliderBtn from "./SliderBtn";
+import PropTypes from "prop-types";
 
 export default function NavBar({displayValue,handleButtonClick,inputValue,handleInputChange,country}) {
 
@@ -42,3 +43,11 @@ export default function NavBar({displayValue,handleButtonClick,inputValue,handle
     </header>
   );
 }
+
+NavBar.propTypes = {
+  displayValue: PropTypes.string.isRequired, 
+  handleButtonClick: PropTypes.func.isRequired, 
+  inputValue: PropTypes.string.isRequired, 
+  handleInputChange: PropTypes.func.isRequired,
+  country: PropTypes.string.isRequired, 
+};
