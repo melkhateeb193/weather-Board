@@ -4,6 +4,7 @@ import NightlightIcon from "@mui/icons-material/Nightlight";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import SliderBtn from "./SliderBtn";
 import PropTypes from "prop-types";
+import myImage from '../../public/436088066_7931395543545743_1167575129986485417_n.jpg';
 
 export default function NavBar({displayValue,handleButtonClick,inputValue,handleInputChange,country}) {
 
@@ -35,7 +36,7 @@ export default function NavBar({displayValue,handleButtonClick,inputValue,handle
         <div className="hidden sm:block ml-4">
           <img
             className="w-10 h-10 rounded-full"
-            src="/436088066_7931395543545743_1167575129986485417_n.jpg"
+            src={myImage}
             alt="img"
           />
         </div>
